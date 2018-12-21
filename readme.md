@@ -16,9 +16,12 @@ You could describe it as a bridge between Laravel and [league/oauth2-client](htt
 * (Cached) resource owner info
 * Driver to allow use of `Auth` facade
 
+## Fork Details
+This fork will allow for additional parameters/headers to be sent in the requests to the OAuth2 server. For example, the domain attrribute for Oracle Access Manager 12c OAuth 2.0.
+
 ## Install
 
-* Using composer: `$ composer require kronthto/laravel-oauth2-login`
+* Using composer: `$ composer require drosair/laravel-oauth2-login`
 * Register the service provider (Auto-Discovery enabled): `Kronthto\LaravelOAuth2Login\ServiceProvider`
 * Publish the config file: `$ artisan vendor:publish --provider="Kronthto\LaravelOAuth2Login\ServiceProvider"`
 * Put the credentials of your OAuth Provider in the published config
